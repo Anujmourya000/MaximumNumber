@@ -20,4 +20,10 @@ public class MaximumNumberTest {
         Integer result = maximum.maxNumber(16,58,40);
         Assertions.assertEquals(58, result);
     }
+
+    @Test
+    public void given_Three_Numbers_Return_ThirdNumber() {
+        Integer result = maximum.maxNumber(8,18,28);
+        Assertions.assertEquals(28, result);
+    }
 }
