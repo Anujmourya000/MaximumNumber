@@ -26,4 +26,15 @@ public class MaximumNumberTest {
         Integer result = maximum.maxNumber(8,18,28);
         Assertions.assertEquals(28, result);
     }
+
+    /**
+     * @description Test case  for finding for float numbers
+     *
+     */
+
+    @Test
+    public void given_Three_Float_Numbers_Return_Max_Number() {
+        Float result = maximum.maxFloatNumber(8.0f,18.60f,28.2f);
+        Assertions.assertEquals(28.2f, result);
+    }
 }
