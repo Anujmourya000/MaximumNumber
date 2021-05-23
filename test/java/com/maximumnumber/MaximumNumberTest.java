@@ -71,4 +71,27 @@ public class MaximumNumberTest {
         String result = maximum.maxStringValue("Apples","Banana","Peach");
         Assertions.assertEquals("Peach", result);
     }
+
+    /**
+     * @description Test cases  for finding for Integer, Float and String More Values
+     *
+     */
+
+    @Test
+    public void give_Maximum_Integer_Value() {
+        Integer result = maximum.testMaximumAll(8, 18, 28, 23, 45, 60, 12, 35, 56);
+        Assertions.assertEquals(60, result);
+    }
+
+    @Test
+    public void give_Maximum_Float_Value() {
+        Float result = maximum.testMaximumAll(18.0f, 28.60f, 48.57f, 35.2f, 42.8f, 12.32f, 69.5f);
+        Assertions.assertEquals(69.5F, result);
+    }
+
+    @Test
+    public void give_Maximum_String_Value() {
+        String result = maximum.testMaximumAll("Apples", "Banana", "Peach", "mango", "kiwi");
+        Assertions.assertEquals("peach", result);
+    }
 }
