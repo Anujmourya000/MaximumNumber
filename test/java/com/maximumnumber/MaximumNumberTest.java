@@ -33,8 +33,20 @@ public class MaximumNumberTest {
      */
 
     @Test
-    public void given_Three_Float_Numbers_Return_Max_Number() {
-        Float result = maximum.maxFloatNumber(8.0f,18.60f,28.2f);
+    public void given_Three_Float_Numbers_Return_first_Number() {
+        Float result = maximum.maxFloatNumber(28.0f,18.60f,8.2f);
         Assertions.assertEquals(28.2f, result);
+    }
+
+    @Test
+    public void given_Three_Float_Numbers_Return_Second_Number() {
+        Float result = maximum.maxFloatNumber(8.0f,36.5f,28.2f);
+        Assertions.assertEquals(36.5f, result);
+    }
+
+    @Test
+    public void given_Three_Float_Numbers_Return_Third_Number() {
+        Float result = maximum.maxFloatNumber(18.0f,28.60f,48.57f);
+        Assertions.assertEquals(48.57f, result);
     }
 }
