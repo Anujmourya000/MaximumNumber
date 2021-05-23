@@ -49,4 +49,26 @@ public class MaximumNumberTest {
         Float result = maximum.maxFloatNumber(18.0f,28.60f,48.57f);
         Assertions.assertEquals(48.57f, result);
     }
+
+    /**
+     * @description Test case  for finding for String Values
+     *
+     */
+    @Test
+    public void given_Three_String_Values_Return_first_Values() {
+        String result = maximum.maxStringValue("Peach","Banana","Apples");
+        Assertions.assertEquals("Peach", result);
+    }
+
+    @Test
+    public void given_Three_String_Values_Return_Second_Values() {
+        String result = maximum.maxStringValue("Banana","Peach","Apples");
+        Assertions.assertEquals("Peach", result);
+    }
+
+    @Test
+    public void given_Three_String_Values_Return_Third_Values() {
+        String result = maximum.maxStringValue("Apples","Banana","Peach");
+        Assertions.assertEquals("Peach", result);
+    }
 }
