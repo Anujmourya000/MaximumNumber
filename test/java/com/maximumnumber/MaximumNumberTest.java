@@ -11,7 +11,7 @@ public class MaximumNumberTest {
 
     @Test
     public void given_Three_Numbers_Return_FirstNumber() {
-        Integer result = maximum.maxNumber(15,23,40);
-        Assertions.assertEquals(40, result);
+        Integer result = maximum.maxNumber(55,23,40);
+        Assertions.assertEquals(55, result);
     }
 }
